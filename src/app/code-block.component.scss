@@ -1,0 +1,81 @@
+@import '~@angular/material/theming';
+@import 'src/theme';
+
+ngrx-code-block {
+  pre.prettyprint {
+    border: none;
+    padding: 16px;
+    margin: 0;
+    border-radius: 3px;
+    font-family: 'PT Mono', monospace;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 1.6em;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  pre .nocode {
+    background-color: none;
+    color: #000;
+  }
+  pre .str {
+    color: mat-color($ngrx-primary, 100);
+  } /* string  - pink */
+  pre .kwd {
+    color: #f0e68c;
+    font-weight: bold;
+  }
+  pre .com {
+    color: #87ceeb;
+  } /* comment - skyblue */
+  pre .typ {
+    color: mat-color($ngrx-accent, 300);
+  } /* type    - lightgreen */
+  pre .lit {
+    color: mat-color($ngrx-primary, 300);
+  } /* literal - darkred */
+  pre .pun {
+    color: #fff;
+  } /* punctuation */
+  pre .pln {
+    color: #fff;
+  } /* plaintext */
+  pre .tag {
+    color: #f0e68c;
+    font-weight: bold;
+  } /* html/xml tag    - lightyellow */
+  pre .atn {
+    color: #bdb76b;
+    font-weight: bold;
+  } /* attribute name  - khaki */
+  pre .atv {
+    color: mat-color($ngrx-primary, 100);
+  } /* attribute value - pink */
+  pre .dec {
+    color: mat-color($ngrx-accent, 300);
+  } /* decimal         - lightgreen */
+
+  /* Specify class=linenums on a pre to get line numbering */
+  ol.linenums {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #aeaeae;
+  } /* IE indents via margin-left */
+  li.L0,
+  li.L1,
+  li.L2,
+  li.L3,
+  li.L5,
+  li.L6,
+  li.L7,
+  li.L8 {
+    list-style-type: none;
+  }
+  /* Alternate shading for lines */
+  li.L1,
+  li.L3,
+  li.L5,
+  li.L7,
+  li.L9 {
+  }
+}
